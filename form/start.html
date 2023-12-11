@@ -16,6 +16,38 @@
   </head>
 
   <body>
-    
+    <form>
+      <label for="email">Email</label>
+      <input type="email" name="email">
+      <label for="password">Password</label>
+      <input type="password" name="password">
+      <label for="fullName">Name and Lastname</label>
+      <input type="text" name="fullName">
+      <label for="birthday">Date of birth</label>
+      <input type="date" name="birthday">
+      <label for="phone">Telephone number</label>
+      <input type="tel" name="phone">
+      <label for="plans">Choose a plan</label>
+      <select name="plans" id="plans">
+        <option value="free">Free plan</option>
+        <optgroup>
+          <option value="basic">Basic plan: 10€</option>
+          <option value="premium">Premium plan: 20€</option>
+          <option value="ultimate">Ultimate plan: 30€</option>
+        </optgroup>
+      </select>
+      <!-- No he podido meter dentro del select la checkbox, me salía fue y sin ir con el label o la option -->
+      <label for="pro">Pro plan</label>
+      <input type="checkbox" name="pro"><br>
+      <label for="creditCard">Credit card number</label>
+      <input type="number" name="creditCard">
+      <label for="expiration">Expiration date</label>
+      <input type="date" name="expiration">
+      <label for="cvc">CVC</label>
+      <input type="number" name="cvc">
+      <label for="address">Billing address<address></address></label>
+      <input type="text" name="address"><br><br>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
